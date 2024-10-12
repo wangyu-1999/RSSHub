@@ -15,6 +15,7 @@ services:
             REDIS_URL: 'redis://redis:6379/'
             PUPPETEER_WS_ENDPOINT: 'ws://browserless:3000'  # marked
             PROXY_URI: 'socks5h://warp-socks:9091'
+            YOUTUBE_KEY: ${YOUTUBE_KEY}
         depends_on:
             - redis
             - browserless  # marked
